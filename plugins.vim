@@ -40,3 +40,4 @@ let g:prettier#config#parser = 'babylon'
 let g:used_javascript_libs = 'react'
 let g:xml_syntax_folding = 0
 
+nnoremap K :Ag <C-r>=expand('<cword>')<CR>

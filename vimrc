@@ -13,6 +13,12 @@ Plug 'larsbs/vimterial_dark'
 Plug 'https://github.com/prettier/vim-prettier'
 Plug 'powerline/powerline'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'larsbs/vimterial_dark'
+Plug 'blueyed/vim-diminactive'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 try
 source ~/.vim/my_configs.vim

@@ -1,11 +1,21 @@
-
-:set autoindent
+set autoindent
 set number
 nnoremap ,<Tab> <C-W><C-W>
 nnoremap gg G
 nnoremap G gg
 
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
+inoremap (; (<CR>);<C-c>O
+inoremap (, (<CR>),<C-c>O
+inoremap {; {<CR>};<C-c>O
+inoremap {, {<CR>},<C-c>O
+inoremap [; [<CR>];<C-c>O
+inoremap [, [<CR>],<C-c>O
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -102,7 +112,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme vimterial_dark
+    colorscheme Oceanic-Next
 catch
 endtry
 
@@ -143,16 +153,16 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
 set tw=500
 
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+"set ai "Auto indent
+"set si "Smart indent
+"set wrap "Wrap lines
 
 
 """"""""""""""""""""""""""""""
